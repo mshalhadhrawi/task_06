@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Create</title>
-    </head>
-    <body>
+{% extends "base.html"%}
+
+{% block content %}
     	<form method="POST">
     		{% csrf_token %}
     		{{ creat_form.as_p }}
-    		<input type="submit"value="Create">
+    		<input type="submit"value="prees me">
     	</form>
-        
-    </body>
-</html>
+{% endblock %}
+
+
